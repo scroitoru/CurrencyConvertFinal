@@ -29,117 +29,15 @@ namespace CurrencyConvertFinal
         /// </summary>
         private void InitializeComponent()
         {
-            this.haveCurrency = new System.Windows.Forms.TextBox();
-            this.btnGetQuote = new System.Windows.Forms.Button();
-            this.lblFxRate = new System.Windows.Forms.Label();
-            this.haveLbl = new System.Windows.Forms.Label();
-            this.wantLbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.amountLbl = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.titleLbl = new System.Windows.Forms.Label();
+            this.fromLbl = new System.Windows.Forms.Label();
+            this.amountUsd = new System.Windows.Forms.TextBox();
+            this.toLbl = new System.Windows.Forms.Label();
+            this.toCurrency = new System.Windows.Forms.TextBox();
+            this.calculate = new System.Windows.Forms.Button();
+            this.resultLbl = new System.Windows.Forms.Label();
+            this.result = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // haveCurrency
-            // 
-            this.haveCurrency.BackColor = System.Drawing.Color.White;
-            this.haveCurrency.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.haveCurrency.Location = new System.Drawing.Point(58, 119);
-            this.haveCurrency.Margin = new System.Windows.Forms.Padding(6);
-            this.haveCurrency.Name = "haveCurrency";
-            this.haveCurrency.Size = new System.Drawing.Size(162, 31);
-            this.haveCurrency.TabIndex = 4;
-            this.haveCurrency.TextChanged += new System.EventHandler(this.tbCurrency_TextChanged);
-            // 
-            // btnGetQuote
-            // 
-            this.btnGetQuote.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGetQuote.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btnGetQuote.Location = new System.Drawing.Point(219, 228);
-            this.btnGetQuote.Margin = new System.Windows.Forms.Padding(6);
-            this.btnGetQuote.Name = "btnGetQuote";
-            this.btnGetQuote.Size = new System.Drawing.Size(150, 44);
-            this.btnGetQuote.TabIndex = 6;
-            this.btnGetQuote.Text = "Calculate";
-            this.btnGetQuote.UseVisualStyleBackColor = true;
-            this.btnGetQuote.Click += new System.EventHandler(this.btnCalculate_Click);
-            // 
-            // lblFxRate
-            // 
-            this.lblFxRate.AutoSize = true;
-            this.lblFxRate.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblFxRate.Location = new System.Drawing.Point(411, 200);
-            this.lblFxRate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblFxRate.Name = "lblFxRate";
-            this.lblFxRate.Size = new System.Drawing.Size(36, 25);
-            this.lblFxRate.TabIndex = 7;
-            this.lblFxRate.Text = "    ";
-            // 
-            // haveLbl
-            // 
-            this.haveLbl.AutoSize = true;
-            this.haveLbl.Font = new System.Drawing.Font("Comic Sans MS", 7.875F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.haveLbl.ForeColor = System.Drawing.Color.White;
-            this.haveLbl.Location = new System.Drawing.Point(53, 75);
-            this.haveLbl.Name = "haveLbl";
-            this.haveLbl.Size = new System.Drawing.Size(187, 29);
-            this.haveLbl.TabIndex = 9;
-            this.haveLbl.Text = "Currency I have:";
-            this.haveLbl.Click += new System.EventHandler(this.title_Click);
-            // 
-            // wantLbl
-            // 
-            this.wantLbl.AutoSize = true;
-            this.wantLbl.Font = new System.Drawing.Font("Comic Sans MS", 7.875F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wantLbl.ForeColor = System.Drawing.Color.White;
-            this.wantLbl.Location = new System.Drawing.Point(342, 75);
-            this.wantLbl.Name = "wantLbl";
-            this.wantLbl.Size = new System.Drawing.Size(188, 29);
-            this.wantLbl.TabIndex = 10;
-            this.wantLbl.Text = "Currency I want:";
-            this.wantLbl.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(347, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 31);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // amountLbl
-            // 
-            this.amountLbl.AutoSize = true;
-            this.amountLbl.Font = new System.Drawing.Font("Consolas", 7.875F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountLbl.ForeColor = System.Drawing.Color.White;
-            this.amountLbl.Location = new System.Drawing.Point(94, 166);
-            this.amountLbl.Name = "amountLbl";
-            this.amountLbl.Size = new System.Drawing.Size(94, 24);
-            this.amountLbl.TabIndex = 12;
-            this.amountLbl.Text = "Amount:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(58, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 31);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 7.875F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(390, 166);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 24);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Amount:";
-            this.label1.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // titleLbl
             // 
@@ -147,29 +45,88 @@ namespace CurrencyConvertFinal
             this.titleLbl.BackColor = System.Drawing.Color.Transparent;
             this.titleLbl.Font = new System.Drawing.Font("Verdana", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLbl.ForeColor = System.Drawing.Color.Coral;
-            this.titleLbl.Location = new System.Drawing.Point(92, 9);
+            this.titleLbl.Location = new System.Drawing.Point(111, 9);
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(402, 35);
             this.titleLbl.TabIndex = 15;
             this.titleLbl.Text = "CURRENCY CONVERTER";
             this.titleLbl.Click += new System.EventHandler(this.label2_Click);
             // 
+            // fromLbl
+            // 
+            this.fromLbl.AutoSize = true;
+            this.fromLbl.Location = new System.Drawing.Point(78, 97);
+            this.fromLbl.Name = "fromLbl";
+            this.fromLbl.Size = new System.Drawing.Size(123, 25);
+            this.fromLbl.TabIndex = 16;
+            this.fromLbl.Text = "From USD$";
+            // 
+            // amountUsd
+            // 
+            this.amountUsd.Location = new System.Drawing.Point(208, 94);
+            this.amountUsd.Name = "amountUsd";
+            this.amountUsd.Size = new System.Drawing.Size(100, 31);
+            this.amountUsd.TabIndex = 17;
+            this.amountUsd.TextChanged += new System.EventHandler(this.amountUsd_TextChanged);
+            // 
+            // toLbl
+            // 
+            this.toLbl.AutoSize = true;
+            this.toLbl.Location = new System.Drawing.Point(35, 142);
+            this.toLbl.Name = "toLbl";
+            this.toLbl.Size = new System.Drawing.Size(167, 25);
+            this.toLbl.TabIndex = 18;
+            this.toLbl.Text = "Currency I want:";
+            // 
+            // toCurrency
+            // 
+            this.toCurrency.Location = new System.Drawing.Point(208, 139);
+            this.toCurrency.Name = "toCurrency";
+            this.toCurrency.Size = new System.Drawing.Size(100, 31);
+            this.toCurrency.TabIndex = 19;
+            this.toCurrency.TextChanged += new System.EventHandler(this.toCurrency_TextChanged);
+            // 
+            // calculate
+            // 
+            this.calculate.Location = new System.Drawing.Point(362, 83);
+            this.calculate.Name = "calculate";
+            this.calculate.Size = new System.Drawing.Size(123, 52);
+            this.calculate.TabIndex = 20;
+            this.calculate.Text = "Calculate";
+            this.calculate.UseVisualStyleBackColor = true;
+            this.calculate.Click += new System.EventHandler(this.calculate_Click);
+            // 
+            // resultLbl
+            // 
+            this.resultLbl.AutoSize = true;
+            this.resultLbl.BackColor = System.Drawing.Color.LightGray;
+            this.resultLbl.Location = new System.Drawing.Point(420, 163);
+            this.resultLbl.Name = "resultLbl";
+            this.resultLbl.Size = new System.Drawing.Size(0, 25);
+            this.resultLbl.TabIndex = 21;
+            // 
+            // result
+            // 
+            this.result.Location = new System.Drawing.Point(366, 147);
+            this.result.Name = "result";
+            this.result.Size = new System.Drawing.Size(100, 23);
+            this.result.TabIndex = 22;
+            this.result.Click += new System.EventHandler(this.result_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(637, 287);
+            this.Controls.Add(this.result);
+            this.Controls.Add(this.resultLbl);
+            this.Controls.Add(this.calculate);
+            this.Controls.Add(this.toCurrency);
+            this.Controls.Add(this.toLbl);
+            this.Controls.Add(this.amountUsd);
+            this.Controls.Add(this.fromLbl);
             this.Controls.Add(this.titleLbl);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.amountLbl);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.wantLbl);
-            this.Controls.Add(this.haveLbl);
-            this.Controls.Add(this.lblFxRate);
-            this.Controls.Add(this.btnGetQuote);
-            this.Controls.Add(this.haveCurrency);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
@@ -181,16 +138,14 @@ namespace CurrencyConvertFinal
         }
 
         #endregion
-        private System.Windows.Forms.TextBox haveCurrency;
-        private System.Windows.Forms.Button btnGetQuote;
-        private System.Windows.Forms.Label lblFxRate;
-        private System.Windows.Forms.Label haveLbl;
-        private System.Windows.Forms.Label wantLbl;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label amountLbl;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label titleLbl;
+        private System.Windows.Forms.Label fromLbl;
+        private System.Windows.Forms.TextBox amountUsd;
+        private System.Windows.Forms.Label toLbl;
+        private System.Windows.Forms.TextBox toCurrency;
+        private System.Windows.Forms.Button calculate;
+        private System.Windows.Forms.Label resultLbl;
+        private System.Windows.Forms.Label result;
     }
 }
 
