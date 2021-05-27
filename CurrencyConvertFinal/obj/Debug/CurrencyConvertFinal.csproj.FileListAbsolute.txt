@@ -8,3 +8,13 @@ C:\Users\user1\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\
 C:\Users\user1\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.csproj.CoreCompileInputs.cache
 C:\Users\user1\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.exe
 C:\Users\user1\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.pdb
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\bin\Debug\CurrencyConvertFinal.exe.config
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\bin\Debug\CurrencyConvertFinal.exe
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\bin\Debug\CurrencyConvertFinal.pdb
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.csprojAssemblyReference.cache
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.Form1.resources
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.Properties.Resources.resources
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.csproj.GenerateResource.cache
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.csproj.CoreCompileInputs.cache
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.exe
+C:\Users\talib\source\repos\CurrencyConvertFinal\CurrencyConvertFinal\obj\Debug\CurrencyConvertFinal.pdb

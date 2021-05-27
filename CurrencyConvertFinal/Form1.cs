@@ -23,7 +23,7 @@ namespace CurrencyConvertFinal
             double dblFxRate = 0.0;
             if (!double.TryParse(strFxRate, out dblFxRate))
             {
-                MessageBox.Show("Unable to parse " + strFxRate);
+                MessageBox.Show("That is not a proper currency abbreviation, please try again.");
             }
             return dblFxRate;
         }
@@ -39,12 +39,20 @@ namespace CurrencyConvertFinal
                     String quotes = client.DownloadString(url);
                     double FxRate = ExtractFxRate(quotes); 
                     double usd = System.Convert.ToDouble(amountUsd.Text);
-                    result.Text = (FxRate * usd).ToString();
+                    result.Text = String.Format("{0:0.00}", FxRate * usd);
                 }
+            }
+            catch(System.FormatException ex)
+            {
+                MessageBox.Show("That is not the proper number format, please try again.");
+            }
+            catch(System.ArgumentOutOfRangeException ex)
+            {
+                MessageBox.Show("That is not a proper currency abbreviation, please try again.");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(System.Environment.StackTrace);
+                MessageBox.Show(ex.ToString());
             }
 
         }
