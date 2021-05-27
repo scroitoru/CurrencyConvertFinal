@@ -56,12 +56,13 @@ namespace CurrencyConvertFinal
             // fromLbl
             // 
             this.fromLbl.AutoSize = true;
+            this.fromLbl.ForeColor = System.Drawing.Color.Coral;
             this.fromLbl.Location = new System.Drawing.Point(58, 78);
             this.fromLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fromLbl.Name = "fromLbl";
-            this.fromLbl.Size = new System.Drawing.Size(94, 20);
+            this.fromLbl.Size = new System.Drawing.Size(41, 20);
             this.fromLbl.TabIndex = 16;
-            this.fromLbl.Text = "From $USD";
+            this.fromLbl.Text = "US$";
             // 
             // amountUsd
             // 
@@ -75,7 +76,8 @@ namespace CurrencyConvertFinal
             // toLbl
             // 
             this.toLbl.AutoSize = true;
-            this.toLbl.Location = new System.Drawing.Point(26, 114);
+            this.toLbl.ForeColor = System.Drawing.Color.Coral;
+            this.toLbl.Location = new System.Drawing.Point(29, 117);
             this.toLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.toLbl.Name = "toLbl";
             this.toLbl.Size = new System.Drawing.Size(123, 20);
@@ -84,7 +86,7 @@ namespace CurrencyConvertFinal
             // 
             // toCurrency
             // 
-            this.toCurrency.Location = new System.Drawing.Point(156, 111);
+            this.toCurrency.Location = new System.Drawing.Point(156, 117);
             this.toCurrency.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toCurrency.Name = "toCurrency";
             this.toCurrency.Size = new System.Drawing.Size(76, 26);
@@ -93,13 +95,15 @@ namespace CurrencyConvertFinal
             // 
             // calculate
             // 
+            this.calculate.BackColor = System.Drawing.Color.Linen;
+            this.calculate.ForeColor = System.Drawing.Color.Coral;
             this.calculate.Location = new System.Drawing.Point(272, 66);
             this.calculate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(92, 42);
             this.calculate.TabIndex = 20;
             this.calculate.Text = "Calculate";
-            this.calculate.UseVisualStyleBackColor = true;
+            this.calculate.UseVisualStyleBackColor = false;
             this.calculate.Click += new System.EventHandler(this.calculate_Click);
             // 
             // resultLbl
@@ -114,18 +118,21 @@ namespace CurrencyConvertFinal
             // 
             // result
             // 
-            this.result.Location = new System.Drawing.Point(274, 118);
+            this.result.BackColor = System.Drawing.Color.Linen;
+            this.result.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.result.Location = new System.Drawing.Point(279, 114);
             this.result.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(75, 18);
+            this.result.Size = new System.Drawing.Size(75, 31);
             this.result.TabIndex = 22;
+            this.result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.result.Click += new System.EventHandler(this.result_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(478, 230);
             this.Controls.Add(this.result);
             this.Controls.Add(this.resultLbl);
@@ -138,7 +145,7 @@ namespace CurrencyConvertFinal
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Currency Converter";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
